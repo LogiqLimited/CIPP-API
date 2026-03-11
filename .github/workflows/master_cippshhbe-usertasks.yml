@@ -14,7 +14,7 @@ env:
 
 jobs:
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
       - name: 'Checkout GitHub Action'
@@ -27,4 +27,4 @@ jobs:
           app-name: 'cippshhbe-usertasks'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ACF02371899547E69764F3AC9C65886D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1F2E2E40D3B44D6399D5D07D507E7A44 }}
